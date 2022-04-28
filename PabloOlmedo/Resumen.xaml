@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PabloOlmedo.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUser" HorizontalTextAlignment="End"/>
+            <Label x:Name="lblPass" HorizontalTextAlignment="End"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Ingrese Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtDatoUno" Placeholder="Ingrese su Nombre" Grid.Row="0" Grid.Column="1" ></Entry>
+                <Label Text="Monto Inicial" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtDatoDos" Placeholder="Ingrese el pago inicial" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

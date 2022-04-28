@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PabloOlmedo.Login">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Examen Semana 4 !" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" />
+            <Entry x:Name="txtUser" Placeholder="User" />
+            <Entry x:Name="txtPass" Placeholder="Pass"  IsPassword="True"/>
+            <Button x:Name="btnAbrirVentanaDos"  Clicked="btnAbrirVentanaDos_Clicked" Text="Abrir"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
